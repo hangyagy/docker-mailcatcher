@@ -1,8 +1,8 @@
-FROM ruby:2.3
+FROM ruby:2.3.1
 
 MAINTAINER tujlaky <tibor@builtwithheart.com>
 
-RUN gem install --no-ri --no-rdoc mailcatcher
+RUN gem install -v 0.6.5 --no-ri --no-rdoc mailcatcher
 
 EXPOSE 1080 1025
 
